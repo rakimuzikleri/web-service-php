@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Laravel</title>
-
+        <script src="{{ asset('js/dropzone.js') }}"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
         <style>
@@ -37,8 +37,11 @@
     </head>
     <body>
         <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+            <div action="/file-upload" class="dropzone">
+
+                <div class="fallback">
+                    <input name="file" type="file" multiple />
+                </div>
             </div>
         </div>
     </body>
